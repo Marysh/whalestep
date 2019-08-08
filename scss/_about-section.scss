@@ -1,0 +1,90 @@
+.abt { //about
+  font-size: 14px;
+  &-text {
+    margin-bottom: 20px;
+  }
+  &-title {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  &_team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &-item {
+      background-repeat: no-repeat;
+      width: 150px;
+      position: relative;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .title {
+        text-align: center;
+        margin: 15px 0;
+
+        span {
+          font-weight: 700;
+          margin-right: 10px;
+        }
+
+      }
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .abt {
+    font-size: 16px;
+    &-text {
+      margin-bottom: 40px;
+    }
+    &_team {
+      margin: 0;
+      &-item {
+        background-image: url("/img/assets/team-photo-decor.png");
+        margin: 10px;
+        &:nth-child(even) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .top-right-decor {
+      background-position-x: right;
+    }
+
+    .bottom-left-decor {
+      background-position-y: bottom;
+    }
+
+    .bottom-right-decor {
+      background-position-y: 70%;
+      background-position-x: right;
+    }
+
+    .top-right-decor-low {
+      background-position-y: 30%;
+      background-position-x: right;
+    }
+  }
+}
+@media (min-width: 1170px) {
+  .abt {
+    &_team {
+      &-item {
+        width: 250px;
+      }
+    }
+  }
+}

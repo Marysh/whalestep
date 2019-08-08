@@ -1,0 +1,26 @@
+// reset
+@import "utills/variables";
+@import "utills/fonts";
+
+@import "base/reboot";
+
+// libs
+@import "libs/magnific-popup/main";
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+// other start:
+
+@import 'general';
+@import 'header';
+@import "first-screen";
+@import "about-section";
+@import 'tech-stack-section';
+@import 'team-gallery-section';
+@import 'review-section';
+@import 'address-section';
+@import 'footer';
+@import "forms";
+
+
+
+
